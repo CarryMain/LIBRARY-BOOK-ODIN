@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <!-- <div id="item" class="item">
+                <p><span>Title:</span> Mashina</p>
+                <p><span>Author:</span> John</p>
+                <p><span>Pages:</span> 265</p>
+                <p><span>Read: </span> Yes</p>
+            </div> -->
+        </div>
+        <div class="right">
+            <button id="onBtn" type="button">Add</button>
+            <button id="deleteBtn" type="button">Delete</button>
+        </div>
+    </div>
+    <form id="dialog" method="dialog" class="modal">
+            <h2>Adding book</h2>
+            <ul>
+                <li>
+                    <label for="title">Title:</label>
+                    <input id="title" type="text" id="title" name="title" placeholder="Harry Potter..." required>
+                </li>
+                <li>
+                    <label for="author">Author:</label>
+                    <input id="author" type="text" id="author" name="author" placeholder="Rouling..." required>
+                </li>
+                <li>
+                    <label for="title">Pages:</label>
+                    <input id="number" type="number" max="3000" id="title" name="title" required>
+                </li>
+                <li>
+                    <label for="read">Read: </label>
+                    <select name="read" id="read">
+                        <option value="reading">Yes</option>
+                        <option value="no-reading">No</option>
+                    </select>
+                    
+                </li>
+            </ul>
+            <button class="btn" id="modalBtn" formmethod="dialog">Add</button>
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
