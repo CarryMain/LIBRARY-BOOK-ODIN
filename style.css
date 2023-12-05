@@ -104,3 +104,7 @@ body {
 .modal::backdrop {
     background-color: linear-gradient(black);
 }
+
+.hidden {
+    display: none;
+}
