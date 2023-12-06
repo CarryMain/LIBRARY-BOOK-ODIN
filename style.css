@@ -9,49 +9,67 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
     display: flex;
-    width: 60%;
+    width: 50%;
     height: 60%;
-    padding: 10px;
+    padding: 50px;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .left {
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: grid;
     background-color: #0284c7;
-    padding: 20px;
+    padding: 10px;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    overflow-y:scroll;
 }
 
 .item {
     border: 1px solid #fff;
     border-radius: 10px;
     color: #fff;
+    margin:0;
+    padding: 10px;;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    text-justify: auto;
-    padding-left: 30px;
+    grid-template-rows: repeat(2,1fr);
 }
+
+.deleteBtn, .changeReadBtn {
+    width: 60%;
+    height: 120%;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    background-color: #1e3a8a;
+}
+
+.deleteBtn:active, .changeReadBtn:active {
+    transform: scale(0.94);
+} 
 
 .right {
     background-color: #38bdf8;
-    width:20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width:4%;
+    height: 5%;
+    border-radius: 30px;
+    position: fixed;
+    top:19%;
+    left: 48%;
 }
 
 .right > button {
-    height: 10%;
-    width: 30%;
-    margin: 20px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     border: none;
     background-color: #1e3a8a;
